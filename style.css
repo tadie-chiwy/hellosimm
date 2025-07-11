@@ -1,0 +1,660 @@
+aa html,
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, cca menu,
+nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.start {
+  background-color: rgb(109, 0, 139);
+  padding: 50px 0px;
+}
+.start .col-md-8 p {
+  color: white;
+  font-size: large;
+}
+.start .col-md-3 .top {
+  border: solid white 1px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px 0px;
+}
+.start .col-md-3 .top a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner header h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 0px;
+}
+.banner header .pp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.banner header .pp h4 {
+  font-size: 13px;
+}
+.banner header .pp h4 span {
+  color: blue;
+}
+.banner header .pp img {
+  width: 25px;
+  margin-top: -13px;
+}
+.banner header .search {
+  width: 80%;
+  height: 35px;
+  border: 1px solid rgba(128, 128, 128, 0.745);
+  border-radius: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  margin-left: 30px;
+}
+.banner header .search .search-input {
+  background-color: transparent;
+  border: none;
+  width: -moz-max-content;
+  width: max-content;
+  height: 35px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+.banner header .ow {
+  border: solid 1px grey;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background-color: rgb(239, 239, 239);
+  margin: 30px 0px;
+}
+.banner header .ow .col-md-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.banner header .ow .col-md-2 img {
+  width: 70%;
+}
+.banner header .ow .col-md-2 a {
+  color: black;
+  text-decoration: none;
+  font-size: small;
+}
+.banner header .col-md-7 img {
+  width: 23%;
+  margin-top: 50px;
+}
+.banner header .col-md-5 .links {
+  display: none;
+}
+.banner header .col-md-5 .ss {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 139, 210);
+  width: 150px;
+  height: 50px;
+  margin-top: -51px;
+  border: 1px solid black;
+  border-radius: 45px;
+  margin-left: 120px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.banner header .col-md-5 .ss .s {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+.banner header .col-md-5 .ss .s img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 7px;
+}
+.banner header .col-md-5 .ss .s a {
+  color: white;
+  font-size: small;
+  text-decoration: none;
+}
+.banner header .col-md-5 .ss .s h1 {
+  color: white;
+  font-size: 20px;
+}
+.banner header .col-md-5 .eng {
+  display: none;
+}
+.banner header .col-md-5 ul {
+  display: none;
+}
+.banner header .col-md-5 .menu {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  left: 87%;
+}
+.banner header .col-md-5 .menu .bar1, .banner header .col-md-5 .menu .bar2, .banner header .col-md-5 .menu .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.banner header .col-md-5.open {
+  transition: ease-in-out 3sec;
+}
+.banner header .col-md-5.open ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 50vh;
+  flex-direction: column;
+  line-height: 50px;
+}
+.banner header .col-md-5.open ul li a {
+  text-decoration: none;
+  font-size: xx-large;
+  color: black;
+  padding: 30px;
+}
+.banner header .col-md-5.open .bar1 {
+  transform: rotate(45deg) translate(15px, 10px);
+}
+.banner header .col-md-5.open .bar2 {
+  opacity: 0;
+}
+.banner header .col-md-5.open .bar3 {
+  transform: rotate(-45deg) translate(5px, 0px);
+  transition: 1;
+}
+
+.mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.mid .mi {
+  width: 230px;
+  height: 60px;
+  background-color: rgb(229, 247, 255);
+  border: solid 1px rgb(229, 247, 255);
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid .mi a {
+  color: rgb(0, 139, 210);
+  text-decoration: none;
+}
+.mid .me {
+  width: 230px;
+  height: 60px;
+  background-color: white;
+  border: solid 1px rgb(229, 247, 255);
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid .me a {
+  color: black;
+  text-decoration: none;
+  border-radius: 45px;
+}
+.mid .me a a {
+  color: blue;
+}
+
+.countries .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.countries h2 {
+  font-size: xx-large;
+}
+.countries .col {
+  height: 170px;
+  width: 80%;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgba(0, 0, 0, 0.293);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 20px 5px;
+}
+.countries .col a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  padding: 20px 0px;
+}
+.countries .btn {
+  margin: 30px 100px;
+  background-color: white;
+  border: black solid 1px;
+  width: 200px;
+  height: 40px;
+  border-radius: 45px;
+}
+.countries .btn a {
+  color: black;
+  text-decoration: none;
+}
+.countries .btn:hover {
+  background-color: aqua;
+}
+.countries .btn:hover a {
+  color: white;
+  text-decoration: none;
+}
+
+.trending {
+  margin: 40px 0;
+}
+.trending .trend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.trending .trend .o {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.trending .trend .o .t {
+  border: solid rgb(230, 248, 255) 1px;
+  border-radius: 45px;
+  margin: 10px;
+}
+.trending .trend .o .t a {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+}
+.trending .trend #blue {
+  background-color: rgb(229, 247, 255);
+}
+
+.discount .container .row .col-md-3 h4 {
+  font-size: large;
+}
+.discount .container .row .col-md-3 .d {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: solid 1px rgb(229, 247, 255);
+  border-radius: 45px;
+  background-color: rgb(230, 248, 255);
+  height: 40px;
+  margin: 30px 0px;
+}
+.discount .container .row .col-md-3 .d h4 {
+  color: rgb(0, 139, 210);
+  text-align: center;
+}
+.discount .container .row .col-md-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.discount .container .row .col-md-6 .a {
+  border: solid 1px rgb(230, 248, 255);
+  width: 40%;
+  height: 40px;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.discount .container .row .col-md-6 .a a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+.discount .container .row .col-md-6 #one {
+  background-color: rgb(230, 248, 255);
+}
+.discount .container .row .col-md-6 #one a {
+  color: rgb(0, 139, 210);
+}
+
+.cards {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: row;
+}
+.cards .cad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards .cad .ca {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.cards .cad .ca .card-body {
+  height: 17rem;
+  margin-top: 10px;
+}
+.cards .cad .ca .card-body .a {
+  border: 1px solid blue;
+  padding: 10px;
+  background-color: rgb(33, 211, 77);
+  border-radius: 45px;
+  margin: 23px 0;
+}
+.cards .cad .ca .card-body .a a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.cards .cad .ca .card-body .qw {
+  display: flex;
+  flex-direction: row;
+  margin: 41px 0;
+}
+.cards .cad .ca .card-body .qw .img {
+  width: 40px;
+  height: 40px;
+}
+.cards .cad .ca .card-body .qw .img img {
+  width: 100%;
+}
+.cards .cad .ca .card-body .qw h5 {
+  font-size: x-large;
+}
+.cards .cad .ca .card-body .alert {
+  width: 180px;
+  height: 10px;
+  background-color: rgb(246, 250, 255);
+  border: 1px solid rgb(246, 250, 255);
+  border-radius: 45px;
+  text-align: center;
+  color: rgb(0, 138, 210);
+  padding-bottom: 35px;
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+.cards .cad .ca .card-body #yelo {
+  background-color: rgb(237, 183, 24);
+  color: white;
+}
+.cards .cad .ca .card-body h5 {
+  font-size: x-large;
+}
+.cards .cad .ca .card-body a {
+  font-size: x-large;
+}
+
+.tax h5 {
+  font-size: larger;
+  color: rgb(0, 138, 210);
+  margin: 30px 0;
+}
+
+.areas {
+  margin: 40px 0px;
+}
+.areas .row {
+  display: flex;
+  justify-content: space-between;
+}
+.areas .row .col {
+  border: 1px solid rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.areas .row .col a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: x-large;
+}
+.areas .row .col p {
+  color: rgb(0, 138, 210);
+  font-size: x-large;
+  margin: 10px 0;
+}
+
+.tr .trend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .start {
+    padding: 5px 0px;
+  }
+  .start #tt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .start #tt .col-md-8 p {
+    font-size: large;
+  }
+  .start #tt .col-md-3 .top {
+    padding: 10px;
+    width: 320px;
+  }
+  .start #tt .col-md-3 .top a {
+    margin-left: 25px;
+  }
+  .banner header {
+    background-image: url(./img/world-banner.webp);
+  }
+  .banner header h1 {
+    font-size: 50px;
+    padding: 40px 0px;
+  }
+  .banner header .pp h4 {
+    font-size: xx-large;
+  }
+  .banner header .search {
+    width: 60%;
+    margin-left: 236px;
+    margin-top: 40px;
+  }
+  .banner header .ow {
+    height: 60px;
+    margin-top: 40px;
+  }
+  .banner header .ow .col-md-2 img {
+    width: 30%;
+  }
+  .banner header .container .col-md-7 img {
+    width: 15%;
+  }
+  .banner header .container .col-md-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .banner header .container .col-md-5 .eng {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 370px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .banner header .container .col-md-5 .eng img {
+    width: 30px;
+    height: 30px;
+  }
+  .banner header .container .col-md-5 .ss {
+    margin-top: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner header .container .col-md-5 .ss .s a {
+    font-size: large;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  .banner header .container .col-md-5 .ss .s h1 {
+    margin-top: 30px;
+  }
+  .banner header .container .col-md-5 .ss .s img {
+    margin-left: -20px;
+  }
+  .banner header .container .col-md-5 .links {
+    display: none;
+  }
+  .banner header .container .col-md-5 ul {
+    display: none;
+  }
+  .banner header .container .col-md-5 .menu {
+    display: none;
+  }
+  .countries .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .countries h2 {
+    font-size: medium;
+  }
+  .countries .col {
+    height: 60px;
+  }
+  .trending .trend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .trending .trend .o .t {
+    margin: 40px;
+    padding: 20px;
+  }
+  .discount .container .row .col-md-6 {
+    margin-top: 98px;
+  }
+  .discount .container .row .col-md-3 {
+    margin-top: -50px;
+  }
+  .cards .cad {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
