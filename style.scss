@@ -382,6 +382,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
 
     }
+	 .top{
+    .cards{
+        display: flex;flex-direction: row;
+    }
+   }
     .trending{
         .trend{
            display: flex;flex-direction: row; justify-content: center; align-items: center;
